@@ -1,3 +1,7 @@
+body {
+  font-family: "Hi Melody", sans-serif !important;
+}
+
 .App {
   text-align: center;
 }
@@ -14,18 +18,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #7365ff;
+  font-size: 24px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +40,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.h-100vh {
+  height: 100vh;
 }
