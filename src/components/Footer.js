@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="row">
         <div className="col-md-12">
           <div className="ptb-2">
-            Developed with Love by{" "}
+            Developed with ❤️ by{" "}
             <Link to="https://nikitamallya.info" target="_blank">
               Nikita
             </Link>
