@@ -1,9 +1,21 @@
 .card {
   &.card-primary {
-    background: #7365ff17;
-    border: 1px solid rgb(0 0 0 / 48%);
+    background: rgb(255 205 101 / 7%);
+    border: 1px solid #dddddd3b;
+    height: 100%;
   }
   &.active {
     background-color: #ffcd65;
+  }
+}
+
+.components {
+  .item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: auto;
+    .items {
+    }
   }
 }
