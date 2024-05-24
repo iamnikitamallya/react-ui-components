@@ -12,7 +12,7 @@ export default function Home() {
             components that are beneficial for nearly all web projects developed
             with React.
           </p>
-          <Link className="App-link" to="/">
+          <Link className="App-link" to="/components">
             Begin
           </Link>
         </div>

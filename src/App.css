@@ -51,3 +51,13 @@ p {
 .h-100vh {
   height: 95vh;
 }
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+a {
+  color: #7365ff;
+}
