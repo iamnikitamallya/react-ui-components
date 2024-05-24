@@ -57,9 +57,13 @@ p {
 }
 
 a {
-  color: #7365ff;
+  color: #7365ff !important;
 }
 
 button.active {
   background-color: #ffcd65;
+}
+
+.cursor {
+  cursor: pointer;
 }

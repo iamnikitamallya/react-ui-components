@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="container h-100vh d-flex align-items-center justify-content-center">
-        <div>
+        <div className="text-center">
           <h2>Hello and welcome to React UI Components!</h2>
           <p>
             This initiative aims to compile the most commonly used React UI
@@ -13,7 +13,7 @@ export default function Home() {
             with React.
           </p>
           <Link className="App-link" to="/components">
-            Begin
+            Explore Components
           </Link>
         </div>
       </div>

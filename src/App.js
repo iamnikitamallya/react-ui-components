@@ -1,4 +1,5 @@
 import "./App.css";
+import "./assets/style/custom.scss";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./pages/Home";

@@ -1,0 +1,9 @@
+.card {
+  &.card-primary {
+    background: #7365ff17;
+    border: 1px solid rgb(0 0 0 / 48%);
+  }
+  &.active {
+    background-color: #ffcd65;
+  }
+}
