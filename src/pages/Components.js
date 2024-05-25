@@ -2,7 +2,6 @@ import React from "react";
 import NavPills from "../components/NavPills";
 import Accordion from "../components/Accordion";
 import AccordionV2 from "../components/AccordionV2";
-import AccordionV3 from "../components/AccordionV3";
 
 export default function Components() {
   const UIComponents = [
@@ -17,10 +16,6 @@ export default function Components() {
     {
       title: "Accordion v.2",
       components: <AccordionV2 />,
-    },
-    {
-      title: "Accordion v.3",
-      components: <AccordionV3 />,
     }
   ];
   return (
