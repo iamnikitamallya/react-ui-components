@@ -4,6 +4,7 @@ import Accordion from "../components/Accordion";
 import AccordionV2 from "../components/AccordionV2";
 import CardV1 from "../components/CardV1";
 import CardV2 from "../components/CardV2";
+import CardV3 from "../components/CardV3";
 
 export default function Components() {
   const UIComponents = [
@@ -26,6 +27,10 @@ export default function Components() {
     {
       title: "Card v.2",
       components: <CardV2 />,
+    },
+    {
+      title: "Card v.3",
+      components: <CardV3 />,
     },
   ];
   return (
