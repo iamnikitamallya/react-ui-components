@@ -9,15 +9,14 @@ export default function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pb-4">
-                <Link to="/">
-                  <HiHome />
-                </Link>
-              </div>
               <div className="ptb-2">
                 Developed with ❤️ by{" "}
                 <Link to="https://nikitamallya.info" target="_blank">
                   Nikita
+                </Link>
+                {" | "}
+                <Link to="/" style={{position: 'relative', top: '-2px'}}>
+                  <HiHome />
                 </Link>
               </div>
             </div>
