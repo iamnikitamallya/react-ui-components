@@ -3,6 +3,7 @@ import NavPills from "../components/NavPills";
 import Accordion from "../components/Accordion";
 import AccordionV2 from "../components/AccordionV2";
 import CardV1 from "../components/CardV1";
+import CardV2 from "../components/CardV2";
 
 export default function Components() {
   const UIComponents = [
@@ -21,6 +22,10 @@ export default function Components() {
     {
       title: "Card v.1",
       components: <CardV1 />,
+    },
+    {
+      title: "Card v.2",
+      components: <CardV2 />,
     },
   ];
   return (

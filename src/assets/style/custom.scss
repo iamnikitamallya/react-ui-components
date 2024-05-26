@@ -7,6 +7,13 @@
   &.active {
     background-color: #ffcd65;
   }
+  .imgbox {
+    img {
+      object-fit: cover;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
 }
 
 .components {
