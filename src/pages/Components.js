@@ -2,10 +2,12 @@ import React from "react";
 import NavPills from "../components/NavPills";
 import Accordion from "../components/Accordion";
 import AccordionV2 from "../components/AccordionV2";
-import CardV1 from "../components/CardV1";
-import CardV2 from "../components/CardV2";
-import CardV3 from "../components/CardV3";
-import CardV4 from "../components/CardV4";
+import CardV1 from "../components/CardOneV1";
+import CardV2 from "../components/CardTwoV1";
+import CardV3 from "../components/CardTwoV2";
+import CardV4 from "../components/CardTwoV3";
+import CardV5 from "../components/CardThreeV1";
+import CardOneV2 from "../components/CardOneV2";
 
 export default function Components() {
   const UIComponents = [
@@ -26,16 +28,24 @@ export default function Components() {
       components: <CardV1 />,
     },
     {
-      title: "Card v.2",
+      title: "Card v.1.2",
+      components: <CardOneV2 />,
+    },
+    {
+      title: "Card v.2.1",
       components: <CardV2 />,
     },
     {
-      title: "Card v.3",
+      title: "Card v.2.2",
       components: <CardV3 />,
     },
     {
-      title: "Card v.4",
+      title: "Card v.2.3",
       components: <CardV4 />,
+    },
+    {
+      title: "Card v.3",
+      components: <CardV5 />,
     },
   ];
   return (

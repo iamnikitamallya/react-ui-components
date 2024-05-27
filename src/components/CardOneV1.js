@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CardV1() {
+export default function CardOneV1() {
   return (
     <>
       <div className="card p-2">

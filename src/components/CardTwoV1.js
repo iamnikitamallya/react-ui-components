@@ -1,11 +1,11 @@
 import React from "react";
-import card from "../assets/img/card.jpg";
+import card from "../assets/img/card.jpg"
 
-export default function CardV3() {
+export default function CardTwoV1() {
   return (
     <>
       <div className="card p-2">
-        <div className="row imgbox">
+        <div className="row imgbox align-items-center">
           <div className="col-md-6">
             <img src={card} alt="" className="img-fluid" />
           </div>
