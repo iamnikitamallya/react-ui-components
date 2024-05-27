@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function CardOneV2() {
+export default function CardOneV3() {
   return (
     <>
-      <div className="card p-2 text-center">
+      <div className="card p-2 text-right">
         <h3>Lorem Ipsum</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
