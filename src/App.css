@@ -73,3 +73,8 @@ button.active {
 p {
   margin-bottom: 0px !important;
 }
+
+button {
+  border-radius: 5px !important;
+  background-color: #ffcd65;
+}
