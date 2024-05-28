@@ -1,5 +1,6 @@
 import React from "react";
 import card from "../assets/img/card.jpg";
+import Button from "./Button";
 
 export default function CardTwoV2() {
   return (
@@ -11,10 +12,11 @@ export default function CardTwoV2() {
           </div>
           <div className="col-md-6">
             <h3>Lorem Ipsum</h3>
-            <p>
+            <p className="pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <Button />
           </div>
         </div>
       </div>
