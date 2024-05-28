@@ -14,6 +14,8 @@ import CardThreeV3 from "../components/CardThreeV3";
 import CardFourV1 from "../components/CardFourV1";
 import CardFourV2 from "../components/CardFourV2";
 import CardFourV3 from "../components/CardFourV3";
+import CardFiveV1 from "../components/CardFiveV1";
+import CardFiveV2 from "../components/CardFiveV2";
 
 export default function Components() {
   const UIComponents = [
@@ -76,6 +78,14 @@ export default function Components() {
     {
       title: "Card v.4.3",
       components: <CardFourV3 />,
+    },
+    {
+      title: "Card v.5.1",
+      components: <CardFiveV1 />,
+    },
+    {
+      title: "Card v.5.2",
+      components: <CardFiveV2 />,
     },
   ];
   return (
