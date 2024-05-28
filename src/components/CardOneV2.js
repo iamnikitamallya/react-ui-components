@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 export default function CardOneV2() {
   return (
@@ -11,6 +12,7 @@ export default function CardOneV2() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
+        <Button />
       </div>
     </>
   );
