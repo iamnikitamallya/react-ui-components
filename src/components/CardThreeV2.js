@@ -2,11 +2,11 @@ import React from "react";
 import card from "../assets/img/card.jpg";
 import Button from "./Button";
 
-export default function CardThreeV1() {
+export default function CardThreeV2() {
   return (
     <>
       <div className="card p-2">
-        <div className="row imgrounded">
+        <div className="row imgrounded text-center">
           <div className="col-md-12">
             <img src={card} alt="" className="w-50 mb-3" />
             <h3>Lorem Ipsum</h3>

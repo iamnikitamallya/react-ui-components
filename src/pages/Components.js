@@ -9,6 +9,7 @@ import CardTwoV2 from "../components/CardTwoV2";
 import CardTwoV3 from "../components/CardTwoV3";
 import CardThreeV1 from "../components/CardThreeV1";
 import CardOneV3 from "../components/CardOneV3";
+import CardThreeV2 from "../components/CardThreeV2";
 
 export default function Components() {
   const UIComponents = [
@@ -49,8 +50,12 @@ export default function Components() {
       components: <CardTwoV3 />,
     },
     {
-      title: "Card v.3",
+      title: "Card v.3.1",
       components: <CardThreeV1 />,
+    },
+    {
+      title: "Card v.3.2",
+      components: <CardThreeV2 />,
     },
   ];
   return (
