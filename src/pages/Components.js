@@ -5,6 +5,7 @@ import AccordionV2 from "../components/AccordionV2";
 import card from "../assets/img/card.jpg";
 import { FaCodepen } from "react-icons/fa";
 import Card from "../components/ui/Card";
+import Button from "../components/ui/Button";
 
 export default function Components() {
   const UIComponents = [
@@ -22,31 +23,59 @@ export default function Components() {
     },
     {
       title: "Card v.1.1",
-      components: <Card />,
+      components: (
+        <Card>
+          <Button title="I'm Primary" variant="primary" size="sm" />
+        </Card>
+      ),
     },
     {
       title: "Card v.1.2",
-      components: <Card textAlign="center" />,
+      components: (
+        <Card textAlign="center">
+          <Button title="I'm Secondary" variant="secondary" size="lg" />
+        </Card>
+      ),
     },
     {
       title: "Card v.1.3",
-      components: <Card textAlign="right" />,
+      components: (
+        <Card textAlign="right">
+          <Button title="I'm Success" variant="success" size="sm" />
+        </Card>
+      ),
     },
     {
       title: "Card v.2.1",
-      components: <Card display="flex" imgUrl={card} />,
+      components: (
+        <Card display="flex" imgUrl={card}>
+          <Button title="I'm Danger" variant="danger" size="sm" />
+        </Card>
+      ),
     },
     {
       title: "Card v.2.2",
-      components: <Card display="flex" imgUrl={card} objectFit="cover" />,
+      components: (
+        <Card display="flex" imgUrl={card} objectFit="cover">
+          <Button title="I'm Warning" variant="warning" size="lg" />
+        </Card>
+      ),
     },
     {
       title: "Card v.2.3",
-      components: <Card display="flex" imgUrl={card} align="center" />,
+      components: (
+        <Card display="flex" imgUrl={card} align="center">
+          <Button title="I'm Light" variant="light" size="lg" />
+        </Card>
+      ),
     },
     {
       title: "Card v.3.1",
-      components: <Card imgUrl={card} />,
+      components: (
+        <Card imgUrl={card}>
+          <Button title="I'm Dark" variant="dark" size="lg" />
+        </Card>
+      ),
     },
     {
       title: "Card v.3.2",
@@ -62,7 +91,11 @@ export default function Components() {
     },
     {
       title: "Card v.4.2",
-      components: <Card icon={<FaCodepen />} textAlign="center" />,
+      components: (
+        <Card icon={<FaCodepen />} textAlign="center">
+          <Button title="I can show up if you add Btn Component" variant="primary" size="sm" />
+        </Card>
+      ),
     },
     {
       title: "Card v.4.3",
@@ -74,7 +107,7 @@ export default function Components() {
     },
     {
       title: "Card v.5.2",
-      components: <Card icon={<FaCodepen />} display="flex" align='center' />,
+      components: <Card icon={<FaCodepen />} display="flex" align="center" />,
     },
   ];
   return (

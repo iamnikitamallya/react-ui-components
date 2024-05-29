@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import Button from "./Button";
 import PropTypes from "prop-types";
 
@@ -11,11 +11,12 @@ export default function Card({
   display,
   objectFit,
   align,
+  children,
 }) {
   return (
     <>
       <div
-        className={`card p-2 text-${textAlign} d-${display} align-items-${align} gap-3`}
+        className={`card p-4 text-${textAlign} d-${display} align-items-${align} gap-3`}
       >
         {imgUrl ? (
           <img
@@ -29,10 +30,11 @@ export default function Card({
           ""
         )}
         {icon}
-        <div className={icon && display === 'flex' ? 'w-80' : ''}>
+        <div className={icon && display === "flex" ? "w-80" : ""}>
           <h3>{title}</h3>
           <p>{description}</p>
-          <Button />
+                  {/* <Button /> */}
+                  {children}
         </div>
       </div>
     </>
@@ -43,7 +45,8 @@ Card.propTypes = {
   textAlign: PropTypes.oneOf(["center", "right"]),
   display: PropTypes.oneOf(["flex", "block"]),
   objectFit: PropTypes.oneOf(["cover", "contain"]),
-  align: PropTypes.oneOf(["center", "start", "end"]),
+    align: PropTypes.oneOf(["center", "start", "end"]),
+//   children: PropTypes.node.isRequired
 };
 
 Card.defaultProps = {
@@ -53,5 +56,6 @@ Card.defaultProps = {
   textAlign: "left",
   display: "block",
   objectFit: "contain",
-  align: "",
+    align: "",
+  children: ""
 };
