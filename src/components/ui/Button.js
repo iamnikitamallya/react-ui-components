@@ -23,5 +23,6 @@ Button.defaultProps = {
   variant: 'primary',
   size: 'small',
   disabled: false,
-  onClick: () => {}
+  onClick: () => { },
+  title: "I'm a Button"
 }

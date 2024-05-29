@@ -70,9 +70,9 @@ button.active {
   cursor: pointer;
 }
 
-p {
+/* p {
   margin-bottom: 0px !important;
-}
+} */
 
 button {
   border-radius: 5px !important;

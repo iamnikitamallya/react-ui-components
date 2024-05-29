@@ -12,17 +12,27 @@ export default function Card({
 }) {
   return (
     <>
-      <div className={`card p-2 ${textAlign} ${display}`}>
-        <div>
+      <div className={`card p-2 text-${textAlign} d-${display}`}>
           <img src={imgUrl} alt={title} />
           {icon}
-        </div>
         <div>
           <h3>{title}</h3>
           <p>{description}</p>
-          <Button title='Know More'/>
+          <Button />
         </div>
       </div>
     </>
   );
+}
+
+Card.propTypes = {
+    textAlign: PropTypes.oneOf(['center', 'right']),
+    display: PropTypes.oneOf(['flex', 'block'])
+}
+
+Card.defaultProps = {
+    title: "I'm a Card Title",
+    description: "Write something about me please!",
+    textAlign: 'left',
+    display: 'flex'
 }

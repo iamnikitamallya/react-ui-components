@@ -2,13 +2,11 @@ import React from "react";
 import NavPills from "../components/NavPills";
 import Accordion from "../components/Accordion";
 import AccordionV2 from "../components/AccordionV2";
-import CardOneV1 from "../components/CardOneV1";
-import CardOneV2 from "../components/CardOneV2";
+import card from "../assets/img/card.jpg";
 import CardTwoV1 from "../components/CardTwoV1";
 import CardTwoV2 from "../components/CardTwoV2";
 import CardTwoV3 from "../components/CardTwoV3";
 import CardThreeV1 from "../components/CardThreeV1";
-import CardOneV3 from "../components/CardOneV3";
 import CardThreeV2 from "../components/CardThreeV2";
 import CardThreeV3 from "../components/CardThreeV3";
 import CardFourV1 from "../components/CardFourV1";
@@ -16,6 +14,7 @@ import CardFourV2 from "../components/CardFourV2";
 import CardFourV3 from "../components/CardFourV3";
 import CardFiveV1 from "../components/CardFiveV1";
 import CardFiveV2 from "../components/CardFiveV2";
+import Card from "../components/ui/Card";
 
 export default function Components() {
   const UIComponents = [
@@ -33,15 +32,15 @@ export default function Components() {
     },
     {
       title: "Card v.1",
-      components: <CardOneV1 />,
+      components: <Card />,
     },
     {
       title: "Card v.1.2",
-      components: <CardOneV2 />,
+      components: <Card textAlign="center" />,
     },
     {
       title: "Card v.1.3",
-      components: <CardOneV3 />,
+      components: <Card textAlign="right" />,
     },
     {
       title: "Card v.2.1",
