@@ -73,7 +73,7 @@ export default function Components() {
       title: "Card v.3.1",
       components: (
         <Card imgUrl={card}>
-          <Button title="I'm Dark" variant="dark" size="lg" />
+          <Button title="I'm Dark" variant="dark" size="sm" />
         </Card>
       ),
     },

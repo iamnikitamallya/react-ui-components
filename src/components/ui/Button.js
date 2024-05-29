@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-export default function Button({variant, size, onClick, disabled, title, url}) {
+export default function Button({variant, size, onClick, disabled, title, url, icon}) {
   return (
     <>
       <Link to={url}>
-        <button className={`btn btn-${variant} btn-${size}`} onClick={onClick} disabled={disabled}>{title}</button>
+        <button className={`btn btn-${variant} btn-${size}`} onClick={onClick} disabled={disabled}>{title}/{icon}</button>
       </Link>
     </>
   );
