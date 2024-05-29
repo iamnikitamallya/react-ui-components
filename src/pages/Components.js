@@ -3,9 +3,6 @@ import NavPills from "../components/NavPills";
 import Accordion from "../components/Accordion";
 import AccordionV2 from "../components/AccordionV2";
 import card from "../assets/img/card.jpg";
-import CardTwoV1 from "../components/CardTwoV1";
-import CardTwoV2 from "../components/CardTwoV2";
-import CardTwoV3 from "../components/CardTwoV3";
 import CardThreeV1 from "../components/CardThreeV1";
 import CardThreeV2 from "../components/CardThreeV2";
 import CardThreeV3 from "../components/CardThreeV3";
@@ -44,27 +41,27 @@ export default function Components() {
     },
     {
       title: "Card v.2.1",
-      components: <Card display='flex' imgUrl={card} />,
+      components: <Card display="flex" imgUrl={card} />,
     },
     {
       title: "Card v.2.2",
-      components: <CardTwoV2 />,
+      components: <Card display="flex" imgUrl={card} objectFit="cover" />,
     },
     {
       title: "Card v.2.3",
-      components: <CardTwoV3 />,
+      components: <Card display="flex" imgUrl={card} align="center" />,
     },
     {
       title: "Card v.3.1",
-      components: <CardThreeV1 />,
+      components: <Card imgUrl={card} />,
     },
     {
       title: "Card v.3.2",
-      components: <CardThreeV2 />,
+      components: <Card imgUrl={card} textAlign="center" />,
     },
     {
       title: "Card v.3.3",
-      components: <CardThreeV3 />,
+      components: <Card imgUrl={card} textAlign='right' />,
     },
     {
       title: "Card v.4.1",
