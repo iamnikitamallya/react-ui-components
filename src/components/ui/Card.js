@@ -17,13 +17,19 @@ export default function Card({
       <div
         className={`card p-2 text-${textAlign} d-${display} align-items-${align} gap-3`}
       >
-        <img
-          src={imgUrl}
-          alt={title}
-          className={display === `flex` ? `object-${objectFit} w-50` : `mb-3 w-100`}
-        />
+        {imgUrl ? (
+          <img
+            src={imgUrl}
+            alt={title}
+            className={
+              display === `flex` ? `object-${objectFit} w-50` : `mb-3 w-100`
+            }
+          />
+        ) : (
+          ""
+        )}
         {icon}
-        <div className={display === `flex` ? `w-50` : `w-100`}>
+        <div className={icon && display === 'flex' ? 'w-80' : ''}>
           <h3>{title}</h3>
           <p>{description}</p>
           <Button />
@@ -36,8 +42,8 @@ export default function Card({
 Card.propTypes = {
   textAlign: PropTypes.oneOf(["center", "right"]),
   display: PropTypes.oneOf(["flex", "block"]),
-    objectFit: PropTypes.oneOf(["cover", "contain"]),
-  align: PropTypes.oneOf(["center", "start", "end"])
+  objectFit: PropTypes.oneOf(["cover", "contain"]),
+  align: PropTypes.oneOf(["center", "start", "end"]),
 };
 
 Card.defaultProps = {
@@ -46,6 +52,6 @@ Card.defaultProps = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   textAlign: "left",
   display: "block",
-    objectFit: "contain",
-  align: ""
+  objectFit: "contain",
+  align: "",
 };

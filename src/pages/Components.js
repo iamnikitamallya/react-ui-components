@@ -3,14 +3,7 @@ import NavPills from "../components/NavPills";
 import Accordion from "../components/Accordion";
 import AccordionV2 from "../components/AccordionV2";
 import card from "../assets/img/card.jpg";
-import CardThreeV1 from "../components/CardThreeV1";
-import CardThreeV2 from "../components/CardThreeV2";
-import CardThreeV3 from "../components/CardThreeV3";
-import CardFourV1 from "../components/CardFourV1";
-import CardFourV2 from "../components/CardFourV2";
-import CardFourV3 from "../components/CardFourV3";
-import CardFiveV1 from "../components/CardFiveV1";
-import CardFiveV2 from "../components/CardFiveV2";
+import { FaCodepen } from "react-icons/fa";
 import Card from "../components/ui/Card";
 
 export default function Components() {
@@ -61,27 +54,27 @@ export default function Components() {
     },
     {
       title: "Card v.3.3",
-      components: <Card imgUrl={card} textAlign='right' />,
+      components: <Card imgUrl={card} textAlign="right" />,
     },
     {
       title: "Card v.4.1",
-      components: <CardFourV1 />,
+      components: <Card icon={<FaCodepen />} />,
     },
     {
       title: "Card v.4.2",
-      components: <CardFourV2 />,
+      components: <Card icon={<FaCodepen />} textAlign="center" />,
     },
     {
       title: "Card v.4.3",
-      components: <CardFourV3 />,
+      components: <Card icon={<FaCodepen />} textAlign="right" />,
     },
     {
       title: "Card v.5.1",
-      components: <CardFiveV1 />,
+      components: <Card icon={<FaCodepen />} display="flex" />,
     },
     {
       title: "Card v.5.2",
-      components: <CardFiveV2 />,
+      components: <Card icon={<FaCodepen />} display="flex" align='center' />,
     },
   ];
   return (

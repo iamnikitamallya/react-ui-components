@@ -78,3 +78,7 @@ button {
   border-radius: 5px !important;
   /* background-color: #91e0ff; */
 }
+
+.w-80 {
+  width: 80%;
+}
