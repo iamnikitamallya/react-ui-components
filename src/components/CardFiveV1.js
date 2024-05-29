@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "./ui/Button";
 import { FaCodepen } from "react-icons/fa";
 
 export default function CardFiveV1() {
@@ -16,7 +16,7 @@ export default function CardFiveV1() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <Button />
+            <Button title="Know More" variant="secondary"/>
           </div>
         </div>
       </div>

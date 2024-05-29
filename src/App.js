@@ -3,7 +3,7 @@ import "./assets/style/custom.scss";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import Footer from "./components/common/Footer";
 import Components from "./pages/Components";
 
 function App() {

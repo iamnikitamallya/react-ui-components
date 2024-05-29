@@ -1,6 +1,6 @@
 import React from "react";
 import card from "../assets/img/card.jpg";
-import Button from "./Button";
+import Button from "./ui/Button";
 
 export default function CardTwoV3() {
   return (
