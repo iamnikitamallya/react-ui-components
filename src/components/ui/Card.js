@@ -9,13 +9,18 @@ export default function Card({
   imgUrl,
   icon,
   display,
+  objectFit,
 }) {
   return (
     <>
-      <div className={`card p-2 text-${textAlign} d-${display}`}>
-          <img src={imgUrl} alt={title} />
-          {icon}
-        <div>
+      <div className={`card p-2 text-${textAlign} d-${display} gap-3`}>
+        <img
+          src={imgUrl}
+          alt={title}
+          className={display === `flex` ? `object-${objectFit} w-50` : `w-100`}
+        />
+        {icon}
+        <div className={display === `flex` ? `w-50` : `w-100`}>
           <h3>{title}</h3>
           <p>{description}</p>
           <Button />
@@ -26,13 +31,16 @@ export default function Card({
 }
 
 Card.propTypes = {
-    textAlign: PropTypes.oneOf(['center', 'right']),
-    display: PropTypes.oneOf(['flex', 'block'])
-}
+  textAlign: PropTypes.oneOf(["center", "right"]),
+  display: PropTypes.oneOf(["flex", "block"]),
+  objectFit: PropTypes.oneOf(["cover", "contain"]),
+};
 
 Card.defaultProps = {
-    title: "I'm a Card Title",
-    description: "Write something about me please!",
-    textAlign: 'left',
-    display: 'flex'
-}
+  title: "I'm a Card Title",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  textAlign: "left",
+  display: "block",
+  objectFit: "contain",
+};

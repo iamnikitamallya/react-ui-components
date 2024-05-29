@@ -44,7 +44,7 @@ export default function Components() {
     },
     {
       title: "Card v.2.1",
-      components: <CardTwoV1 />,
+      components: <Card display='flex' imgUrl={card} />,
     },
     {
       title: "Card v.2.2",
@@ -92,7 +92,7 @@ export default function Components() {
       <div className="row">
         {UIComponents.map((item) => (
           <div className="col-md-4 pb-4">
-            <div className="card card-primary p-3">
+            <div className="p-2">
               <h3>{item.title}</h3>
               {item.components}
             </div>

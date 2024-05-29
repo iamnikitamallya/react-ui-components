@@ -1,4 +1,6 @@
 .card {
+  flex-direction: row !important;
+  height: 100% !important;
   &.card-primary {
     background: rgb(115 101 255 / 8%);
     border: 1px solid #dddddd3b;
@@ -7,11 +9,17 @@
   &.active {
     background-color: #ffcd65;
   }
-  .imgbox {
-    img {
+  img {
+    border-radius: 10px;
+    &.object-cover {
       object-fit: cover;
       height: 100%;
       border-radius: 10px;
+    }
+    &.object-contain {
+      object-fit: contain;
+      border-radius: 10px !important;
+      height: 100%;
     }
   }
   .imgrounded {
