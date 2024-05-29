@@ -21,7 +21,7 @@ export default function Components() {
       components: <AccordionV2 />,
     },
     {
-      title: "Card v.1",
+      title: "Card v.1.1",
       components: <Card />,
     },
     {
