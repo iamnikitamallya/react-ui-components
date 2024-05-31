@@ -79,11 +79,19 @@ export default function Components() {
     },
     {
       title: "Card v.3.2",
-      components: <Card imgUrl={card} textAlign="center" />,
+      components: (
+        <Card imgUrl={card} textAlign="center">
+          <Button title="I'm Info" variant="info" size="lg" />
+        </Card>
+      ),
     },
     {
       title: "Card v.3.3",
-      components: <Card imgUrl={card} textAlign="right" />,
+      components: (
+        <Card imgUrl={card} textAlign="right">
+          <Button title="I'm the Link" variant="link" size="sm" />
+        </Card>
+      ),
     },
     {
       title: "Card v.4.1",
@@ -93,7 +101,11 @@ export default function Components() {
       title: "Card v.4.2",
       components: (
         <Card icon={<FaCodepen />} textAlign="center">
-          <Button title="I can show up if you add Btn Component" variant="primary" size="sm" />
+          <Button
+            title="I can show up if you add Button Component"
+            variant="primary"
+            size="sm"
+          />
         </Card>
       ),
     },

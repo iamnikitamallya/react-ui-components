@@ -13,7 +13,7 @@ export default function Button({variant, size, onClick, disabled, title, url, ic
 }
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'secondary', 'light', 'dark', 'success', 'danger', 'warning', 'info']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'light', 'dark', 'success', 'danger', 'warning', 'info', 'link']),
   size: PropTypes.oneOf(['sm', 'lg']),
   disabled: PropTypes.bool,
   onClick: PropTypes.func
