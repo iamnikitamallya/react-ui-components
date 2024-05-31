@@ -1,7 +1,7 @@
 import React from "react";
-import NavPills from "../components/NavPills";
-import Accordion from "../components/Accordion";
-import AccordionV2 from "../components/AccordionV2";
+import NavPills from "../components/ui/NavPills";
+import Accordion from "../components/ui/Accordion";
+import AccordionV2 from "../components/ui/AccordionV2";
 import card from "../assets/img/card.jpg";
 import { FaCodepen } from "react-icons/fa";
 import Card from "../components/ui/Card";
