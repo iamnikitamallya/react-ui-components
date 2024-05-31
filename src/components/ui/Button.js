@@ -6,7 +6,7 @@ export default function Button({variant, size, onClick, disabled, title, url, ic
   return (
     <>
       <Link to={url}>
-        <button className={`btn btn-${variant} btn-${size}`} onClick={onClick} disabled={disabled}>{title}/{icon}</button>
+        <button className={`btn btn-${variant} btn-${size}`} onClick={onClick} disabled={disabled}>{title} {icon}</button>
       </Link>
     </>
   );

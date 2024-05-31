@@ -31,10 +31,10 @@ export default function Card({
         )}
         {icon}
         <div className={icon && display === "flex" ? "w-80" : ""}>
-          <h3>{title}</h3>
+          <h5>{title}</h5>
           <p>{description}</p>
-                  {/* <Button /> */}
-                  {children}
+          {/* <Button /> */}
+          {children}
         </div>
       </div>
     </>
@@ -45,8 +45,8 @@ Card.propTypes = {
   textAlign: PropTypes.oneOf(["center", "right"]),
   display: PropTypes.oneOf(["flex", "block"]),
   objectFit: PropTypes.oneOf(["cover", "contain"]),
-    align: PropTypes.oneOf(["center", "start", "end"]),
-//   children: PropTypes.node.isRequired
+  align: PropTypes.oneOf(["center", "start", "end"]),
+  //   children: PropTypes.node.isRequired
 };
 
 Card.defaultProps = {
@@ -56,6 +56,6 @@ Card.defaultProps = {
   textAlign: "left",
   display: "block",
   objectFit: "contain",
-    align: "",
-  children: ""
+  align: "",
+  children: "",
 };

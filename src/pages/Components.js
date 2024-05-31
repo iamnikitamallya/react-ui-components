@@ -116,7 +116,7 @@ export default function Components() {
         {UIComponents.map((item) => (
           <div className="col-md-4 pb-4">
             <div className="p-2">
-              <h3>{item.title}</h3>
+              <h6 className="text-gray">{item.title}</h6>
               {item.components}
             </div>
           </div>

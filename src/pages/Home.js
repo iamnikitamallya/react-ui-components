@@ -6,8 +6,8 @@ export default function Home() {
     <>
       <div className="container h-100vh d-flex align-items-center justify-content-center">
         <div className="text-center">
-          <h2>Hello and welcome to React UI Components!</h2>
-          <p style={{paddingBottom: '10px'}}>
+          <h3>Hello and welcome to React UI Components!</h3>
+          <p>
             This initiative aims to compile the most commonly used React UI
             components that are beneficial for nearly all web projects developed
             with React.

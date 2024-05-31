@@ -1,13 +1,11 @@
 body {
   font-family: "Teachers", sans-serif;
-  font-size: 18px;
+  font-size: 14px !important;
 }
 
 p {
-  font-size: 20px !important;
-  line-height: 20px !important;
+  font-size: 14px !important;
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -32,8 +30,12 @@ p {
 }
 
 .App-link {
-  color: #7365ff;
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-gray {
+  color: #9b9b9b !important;
 }
 
 @keyframes App-logo-spin {
