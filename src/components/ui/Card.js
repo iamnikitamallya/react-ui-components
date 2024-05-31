@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Text from "./Text";
 
 export default function Card({
   textAlign,
-  title,
   description,
   imgUrl,
   icon,
@@ -20,7 +20,7 @@ export default function Card({
         {imgUrl ? (
           <img
             src={imgUrl}
-            alt={title}
+            alt=""
             className={
               display === `flex` ? `object-${objectFit} w-50` : `mb-3 w-100`
             }
@@ -30,8 +30,11 @@ export default function Card({
         )}
         {icon}
         <div className={icon && display === "flex" ? "w-80" : ""}>
-          <h5>{title}</h5>
-          <p>{description}</p>
+          <Text variant="h5" title="I'm the Card Title" />
+          <Text
+            variant="para"
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
+          />
           {/* <Button /> */}
           {children}
         </div>
@@ -49,7 +52,6 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  title: "I'm a Card Title",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   textAlign: "left",

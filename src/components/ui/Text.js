@@ -10,12 +10,13 @@ export default function Text({
   style,
   letterSpacing,
   align,
-  transform
+  transform,
+  className
 }) {
   return (
     <>
       <div
-        className={`text-${color} ${variant} text-${align} text-${transform} fst-${style} fw-${weight} text-decoration-${decoration}`}
+        className={`text-${color} ${variant} text-${align} text-${transform} fst-${style} fw-${weight} text-decoration-${decoration} ${className}`}
         style={{
           letterSpacing: `${letterSpacing}px`,
         }}
@@ -55,16 +56,19 @@ Text.propTypes = {
   style: PropTypes.oneOf(["normal", "italic"]),
   weight: PropTypes.oneOf(["bold", "bolder", "normal", "light", "lighter"]),
   decoration: PropTypes.oneOf(["underline", 'line-through', 'none']),
-  letterSpacing: PropTypes.oneOf(['0', '1', '2', '3', '4', '5'])
+  letterSpacing: PropTypes.oneOf(['0', '1', '2', '3', '4', '5']),
+  className: PropTypes.string,
 };
 
 Text.defaultProps = {
   color: 'body',
   variant: 'para',
-  align: 'start',
+  align: 'none',
   transform: 'none',
   style: 'normal',
-  weight: 'normal',
+  weight: 'none',
   decoration: 'none',
-  letterSpacing: '0'
+  letterSpacing: '0',
+  title: "I'm the Text Component",
+  className: ""
 }
