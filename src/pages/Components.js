@@ -95,7 +95,11 @@ export default function Components() {
     },
     {
       title: "Card v.4.1",
-      components: <Card icon={<FaCodepen />} />,
+      components: (
+        <Card icon={<FaCodepen />}>
+          <Button title="Outline Primary" variant="outline-primary" size="sm" />
+        </Card>
+      ),
     },
     {
       title: "Card v.4.2",
@@ -111,15 +115,31 @@ export default function Components() {
     },
     {
       title: "Card v.4.3",
-      components: <Card icon={<FaCodepen />} textAlign="right" />,
+      components: (
+        <Card icon={<FaCodepen />} textAlign="right">
+          <Button
+            title="Outline Secondary"
+            variant="outline-secondary"
+            size="lg"
+          />
+        </Card>
+      ),
     },
     {
       title: "Card v.5.1",
-      components: <Card icon={<FaCodepen />} display="flex" />,
+      components: (
+        <Card icon={<FaCodepen />} display="flex">
+          <Button title="Outline Danger" variant="outline-danger" size="lg" />
+        </Card>
+      ),
     },
     {
       title: "Card v.5.2",
-      components: <Card icon={<FaCodepen />} display="flex" align="center" />,
+      components: (
+        <Card icon={<FaCodepen />} display="flex" align="center">
+          <Button title="Outline Info" variant="outline-info" size="sm" />
+        </Card>
+      ),
     },
   ];
   return (
