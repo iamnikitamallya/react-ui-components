@@ -5,17 +5,20 @@ export default function Accordion() {
     {
       id: "accord1",
       title: "Accordion 1",
-      content: "Im accordion 1 content",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis. ",
     },
     {
       id: "accord2",
       title: "Accordion 2",
-      content: "Im accordion 2 content",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis.",
     },
     {
       id: "accord3",
       title: "Accordion 3",
-      content: "Im accordion 3 content",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis.",
     },
   ];
   const [activeTab, setActiveTab] = useState("accord1");
@@ -24,7 +27,7 @@ export default function Accordion() {
   };
   return (
     <>
-      <div>
+      <div className="accordion"  >
         {accord.map((item) => (
           <>
             <div className="pb-2">

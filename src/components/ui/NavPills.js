@@ -5,19 +5,22 @@ export default function NavPills() {
     {
       id: "tab1",
       title: "Tab 1",
-      content: "You will always regret the round of JÃ¤germeister.",
+      content:
+        "TAB 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis.",
     },
     {
       id: "tab2",
       title: "Tab 2",
-      content: "If you don't ask, you don't get.",
+      content:
+        "TAB 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis.",
     },
     {
       id: "tab3",
       title: "Tab 3",
-      content: "When faced with a choice, do both.",
+      content:
+        "TAB 3  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis.",
     },
-    ];
+  ];
     
     const [activeTab, setActiveTab] = useState('tab1')
     const handleClick = (id) => {
