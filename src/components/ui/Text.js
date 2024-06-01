@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import PropTypes from "prop-types";
 
 export default function Text({
@@ -11,7 +11,8 @@ export default function Text({
   letterSpacing,
   align,
   transform,
-  className
+  className,
+  children
 }) {
   return (
     <>
@@ -21,7 +22,7 @@ export default function Text({
           letterSpacing: `${letterSpacing}px`,
         }}
       >
-        {content}
+        {content ? content : { children }}
       </div>
     </>
   );

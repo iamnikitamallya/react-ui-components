@@ -27,7 +27,12 @@ export default function Components() {
       title: "Card v.1.1",
       components: (
         <Card>
-          <Button title="I'm Primary" variant="primary" size="sm" rtIcon={<FaArrowRight />} />
+          <Button
+            title="I'm Primary"
+            variant="primary"
+            size="sm"
+            rtIcon={<FaArrowRight />}
+          />
         </Card>
       ),
     },
@@ -58,8 +63,18 @@ export default function Components() {
     {
       title: "Card v.2.2",
       components: (
-        <Card display="flex" imgUrl={card} objectFit="cover">
-          <Button title="I'm Warning" variant="warning" size="lg" ltIcon={<FaArrowLeft />} />
+        <Card
+          display="flex"
+          imgUrl={card}
+          objectFit="cover"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
+        >
+          <Button
+            title="I'm Warning"
+            variant="warning"
+            size="lg"
+            ltIcon={<FaArrowLeft />}
+          />
         </Card>
       ),
     },
@@ -67,7 +82,7 @@ export default function Components() {
       title: "Card v.2.3",
       components: (
         <Card display="flex" imgUrl={card} align="center">
-          <Button title="I'm Light" variant="light" size="lg" />
+          <Button title="I'm Light" variant="light" size="sm" />
         </Card>
       ),
     },
@@ -83,7 +98,7 @@ export default function Components() {
       title: "Card v.3.2",
       components: (
         <Card imgUrl={card} textAlign="center">
-          <Button title="I'm Info" variant="info" size="lg" />
+          <Button title="I'm Info" variant="info" size="sm" />
         </Card>
       ),
     },
@@ -122,7 +137,7 @@ export default function Components() {
           <Button
             title="Outline Secondary"
             variant="outline-secondary"
-            size="lg"
+            size="sm"
           />
         </Card>
       ),
