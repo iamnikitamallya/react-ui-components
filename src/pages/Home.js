@@ -9,11 +9,11 @@ export default function Home() {
         <div className="text-center">
           <Text
             variant="h4"
-            title="Hello and welcome to React UI Components!"
+            content="Hello and welcome to React UI Components!"
           />
           <Text
             variant="para"
-            title="This initiative aims to compile the most commonly used React UI components, beneficial for nearly all web projects developed with React. I have utilized Bootstrap CSS classes in some places and have written custom CSS as well."
+            content ="This initiative aims to compile the most commonly used React UI components, beneficial for nearly all web projects developed with React. I have utilized Bootstrap CSS classes in some places and have written custom CSS as well."
           />
           <Link className="App-link" to="/components">
             Explore Components

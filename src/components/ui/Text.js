@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Text({
-  title,
+  content,
   color,
   variant,
   weight,
@@ -21,14 +21,14 @@ export default function Text({
           letterSpacing: `${letterSpacing}px`,
         }}
       >
-        {title}
+        {content}
       </div>
     </>
   );
 }
 
 Text.propTypes = {
-  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
   color: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -70,6 +70,6 @@ Text.defaultProps = {
   weight: 'none',
   decoration: 'none',
   letterSpacing: '0',
-  title: "I'm the Text Component",
+  content: "I'm the Content",
   className: ""
 }

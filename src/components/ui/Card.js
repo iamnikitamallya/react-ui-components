@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import Text from "./Text";
 
 export default function Card({
-  textAlign,
-  description,
+  textAlign,  
   imgUrl,
   icon,
   display,
@@ -30,10 +29,10 @@ export default function Card({
         )}
         {icon}
         <div className={icon && display === "flex" ? "w-80" : ""}>
-          <Text variant="h5" title="I'm the Card Title" />
+          <Text variant="h5" content="I'm the Card Title" />
           <Text
             variant="para"
-            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
           />
           {/* <Button /> */}
           {children}
