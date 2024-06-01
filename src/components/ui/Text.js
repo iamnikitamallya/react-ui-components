@@ -28,6 +28,7 @@ export default function Text({
 }
 
 Text.propTypes = {
+  title: PropTypes.string.isRequired,
   color: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -55,8 +56,8 @@ Text.propTypes = {
   transform: PropTypes.oneOf(["lowercase", "uppercase", "capitalize", "none"]),
   style: PropTypes.oneOf(["normal", "italic"]),
   weight: PropTypes.oneOf(["bold", "bolder", "normal", "light", "lighter"]),
-  decoration: PropTypes.oneOf(["underline", 'line-through', 'none']),
-  letterSpacing: PropTypes.oneOf(['0', '1', '2', '3', '4', '5']),
+  decoration: PropTypes.oneOf(["underline", "line-through", "none"]),
+  letterSpacing: PropTypes.oneOf(["0", "1", "2", "3", "4", "5"]),
   className: PropTypes.string,
 };
 

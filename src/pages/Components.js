@@ -6,6 +6,8 @@ import card from "../assets/img/card.jpg";
 import { FaCodepen } from "react-icons/fa";
 import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function Components() {
   const UIComponents = [
@@ -25,7 +27,7 @@ export default function Components() {
       title: "Card v.1.1",
       components: (
         <Card>
-          <Button title="I'm Primary" variant="primary" size="sm" />
+          <Button title="I'm Primary" variant="primary" size="sm" rtIcon={<FaArrowRight />} />
         </Card>
       ),
     },
@@ -57,7 +59,7 @@ export default function Components() {
       title: "Card v.2.2",
       components: (
         <Card display="flex" imgUrl={card} objectFit="cover">
-          <Button title="I'm Warning" variant="warning" size="lg" />
+          <Button title="I'm Warning" variant="warning" size="lg" ltIcon={<FaArrowLeft />} />
         </Card>
       ),
     },
@@ -146,7 +148,7 @@ export default function Components() {
     <div className="container pt-4 pb-4 components">
       <div className="row">
         {UIComponents.map((item) => (
-          <div className="col-md-4 pb-4">
+          <div className="col-md-6 pb-4">
             <div className="p-2">
               <h6 className="text-gray">{item.title}</h6>
               {item.components}

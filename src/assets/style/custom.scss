@@ -43,3 +43,21 @@
     }
   }
 }
+
+.btn {
+  svg {
+    font-size: inherit !important;
+    color: inherit !important;
+    padding-bottom: 0;
+  }
+  &.rtIcon {
+    svg {
+      margin-left: 10px;
+    }
+  }
+  &.ltIcon {
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
