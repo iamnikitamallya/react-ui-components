@@ -34,7 +34,7 @@ export default function NavPills() {
           <button
             key={item.id}
             onClick={() => handleClick(item.id)}
-            className={activeTab === item.id ? "active" : ""}
+            className={activeTab === item.id ? "active" : "bg-white"}
           >
             {item.title}
           </button>
