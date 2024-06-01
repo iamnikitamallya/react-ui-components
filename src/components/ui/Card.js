@@ -10,6 +10,7 @@ export default function Card({
   objectFit,
   align,
   children,
+  title,
   description
 }) {
   return (
@@ -30,7 +31,7 @@ export default function Card({
         )}
         {icon}
         <div className={icon && display === "flex" ? "w-80" : ""}>
-          <Text variant="h5" content="I'm the Card Title" />
+          <Text variant="h5" content={title ? title : children} />
           <Text variant="para" content={description ? description : children} />
           {/* <Button /> */}
           {children}
@@ -49,6 +50,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
+  title: "I'm the Card",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   textAlign: "left",

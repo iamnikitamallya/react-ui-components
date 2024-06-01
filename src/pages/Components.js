@@ -67,6 +67,7 @@ export default function Components() {
           display="flex"
           imgUrl={card}
           objectFit="cover"
+          title="Lorem ipsum dolor sit"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
         >
           <Button
