@@ -13,9 +13,7 @@ export default function Home() {
           />
           <Text
             variant="para"
-            title="This initiative aims to compile the most commonly used React UI
-            components that are beneficial for nearly all web projects developed
-            with React."
+            title="This initiative aims to compile the most commonly used React UI components, beneficial for nearly all web projects developed with React. I have utilized Bootstrap CSS classes in some places and have written custom CSS as well."
           />
           <Link className="App-link" to="/components">
             Explore Components
