@@ -8,6 +8,7 @@ import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import Text from "../components/ui/Text";
 
 export default function Components() {
   const UIComponents = [
@@ -70,6 +71,7 @@ export default function Components() {
           title="Lorem ipsum dolor sit"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
         >
+          <Text content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue." />
           <Button
             title="I'm Warning"
             variant="warning"
