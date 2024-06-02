@@ -11,12 +11,13 @@
     url,
     rtIcon,
     ltIcon,
+    bRadius,
   }) {
     return (
       <>
         <Link to={url}>
           <button
-            className={`btn btn-${variant} btn-${size} ${
+            className={`btn btn-${variant} btn-${size} rounded-${bRadius} ${
               rtIcon ? "rtIcon" : ""
             } ${ltIcon ? "ltIcon" : ""}`}
             onClick={onClick}
@@ -52,6 +53,7 @@
       "link",
     ]),
     size: PropTypes.oneOf(["sm", "lg"]),
+    bRadius: PropTypes.oneOf(['0', '1,', '2', '3', '4', '5']),
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
     url: PropTypes.elementType,
@@ -66,4 +68,5 @@
     onClick: () => {},
     title: "I'm a Button",
     url: "/",
+    bRadius: '2',
   };
