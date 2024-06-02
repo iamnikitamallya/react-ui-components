@@ -149,7 +149,12 @@ export default function Components() {
       title: "Card v.5.1",
       components: (
         <Card icon={<FaCodepen />} display="flex">
-          <Button title="Outline Danger" variant="outline-danger" size="lg" />
+          <Button
+            title="Outline Danger"
+            variant="outline-danger"
+            size="lg"
+            rtIcon={<FaArrowRight />}
+          />
         </Card>
       ),
     },
