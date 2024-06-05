@@ -3,15 +3,15 @@ import PropTypes from "prop-types";
 import Text from "./Text";
 
 export default function Card({
-  textAlign,
+  textAlign = "initial",
   imgUrl,
   icon,
-  display,
-  objectFit,
-  align,
-  children,
-  title,
-  description,
+  display = "block",
+  objectFit = "contain",
+  align = "initial",
+  children = "",
+  title = "I'm the Card",
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 }) {
   return (
     <>
@@ -47,15 +47,4 @@ Card.propTypes = {
   objectFit: PropTypes.oneOf(["cover", "contain"]),
   align: PropTypes.oneOf(["initial", "center", "start", "end"]),
   //   children: PropTypes.node.isRequired
-};
-
-Card.defaultProps = {
-  title: "I'm the Card",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  textAlign: "initial",
-  display: "block",
-  objectFit: "contain",
-  align: "initial",
-  children: "",
 };

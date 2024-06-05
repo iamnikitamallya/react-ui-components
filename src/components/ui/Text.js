@@ -10,7 +10,7 @@ function Text({
   style = "normal",
   letterSpacing,
   align = "initial",
-  transform = "initial",
+  transform = "none",
   className = "",
 }) {
   return (
@@ -52,6 +52,7 @@ Text.propTypes = {
     "left",
     "right",
     "justify",
+    "initial"
   ]),
   transform: PropTypes.oneOf(["lowercase", "uppercase", "capitalize", "none"]),
   style: PropTypes.oneOf(["normal", "italic"]),

@@ -36,14 +36,12 @@ export default function Accordion() {
                   ? "card active cursor px-2"
                   : "card cursor px-2"
               }
-              key={item.id}
               onClick={() => handleClick(item.id)}
             >
               {item.title}
             </div>
             <div
               className={activeTab === item.id ? "d-block" : "d-none"}
-              key={item.id}
             >
               <div className="card p-2">{item.content}</div>
             </div>
