@@ -2,16 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Text({
-  content,
-  color,
-  variant,
-  weight,
-  decoration,
-  style,
+  content = "I'm the Content",
+  color = "body",
+  variant = "para",
+  weight = "normal",
+  decoration = "none",
+  style = "normal",
   letterSpacing,
-  align,
-  transform,
-  className,
+  align = "start",
+  transform = "initial",
+  className = "",
 }) {
   return (
     <>
@@ -60,16 +60,5 @@ Text.propTypes = {
   letterSpacing: PropTypes.oneOf(["0", "1", "2", "3", "4", "5"]),
   className: PropTypes.string,
 };
-
-Text.defaultProps = {
-  content: "I'm the Content",
-  className: "",
-  color: "body",
-  align: "left",
-  transform: "initial",
-  style: "normal",
-  weight: "normal",
-  decoration: "none",
-}
 
 export default Text;

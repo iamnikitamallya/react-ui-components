@@ -168,7 +168,7 @@ export default function Components() {
     },
     {
       title: "Text v.1",
-      components: <Text variant="h1" content="I'm the H1"/>
+      components: <Text variant="h1" content="I'm the H1" color="primary"/>
     }
   ];
   return (
