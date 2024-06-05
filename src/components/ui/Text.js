@@ -9,7 +9,7 @@ function Text({
   decoration = "none",
   style = "normal",
   letterSpacing,
-  align = "start",
+  align = "initial",
   transform = "initial",
   className = "",
 }) {

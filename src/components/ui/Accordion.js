@@ -27,29 +27,27 @@ export default function Accordion() {
   };
   return (
     <>
-      <div className="accordion"  >
+      <div className="accordion">
         {accord.map((item) => (
-          <>
-            <div className="pb-2">
-              <div
-                className={
-                  activeTab === item.id
-                    ? "card active cursor px-2"
-                    : "card cursor px-2"
-                }
-                key={item.id}
-                onClick={() => handleClick(item.id)}
-              >
-                {item.title}
-              </div>
-              <div
-                className={activeTab === item.id ? "d-block" : "d-none"}
-                key={item.id}
-              >
-                <div className="card p-2">{item.content}</div>
-              </div>
+          <div className="pb-2" key={item.id}>
+            <div
+              className={
+                activeTab === item.id
+                  ? "card active cursor px-2"
+                  : "card cursor px-2"
+              }
+              key={item.id}
+              onClick={() => handleClick(item.id)}
+            >
+              {item.title}
             </div>
-          </>
+            <div
+              className={activeTab === item.id ? "d-block" : "d-none"}
+              key={item.id}
+            >
+              <div className="card p-2">{item.content}</div>
+            </div>
+          </div>
         ))}
       </div>
     </>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Text from "./Text";
 
 export default function Card({
-  textAlign,  
+  textAlign,
   imgUrl,
   icon,
   display,
@@ -11,7 +11,7 @@ export default function Card({
   align,
   children,
   title,
-  description
+  description,
 }) {
   return (
     <>
@@ -42,10 +42,10 @@ export default function Card({
 }
 
 Card.propTypes = {
-  textAlign: PropTypes.oneOf(["center", "right"]),
+  textAlign: PropTypes.oneOf(["initial", "left", "center", "right"]),
   display: PropTypes.oneOf(["flex", "block"]),
   objectFit: PropTypes.oneOf(["cover", "contain"]),
-  align: PropTypes.oneOf(["center", "start", "end"]),
+  align: PropTypes.oneOf(["initial", "center", "start", "end"]),
   //   children: PropTypes.node.isRequired
 };
 
@@ -53,9 +53,9 @@ Card.defaultProps = {
   title: "I'm the Card",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  textAlign: "left",
+  textAlign: "initial",
   display: "block",
   objectFit: "contain",
-  align: "",
+  align: "initial",
   children: "",
 };

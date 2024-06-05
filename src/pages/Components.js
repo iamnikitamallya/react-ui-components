@@ -168,14 +168,14 @@ export default function Components() {
     },
     {
       title: "Text v.1",
-      components: <Text variant="h1" content="I'm the H1" color="primary"/>
-    }
+      components: <Text variant="h1" content="I'm the H1" color="primary" />,
+    },
   ];
   return (
     <div className="container pt-4 pb-4 components">
       <div className="row">
         {UIComponents.map((item) => (
-          <div className="col-md-6 pb-4">
+          <div className="col-md-6 pb-4" key={item.title}>
             <div className="p-2">
               <h6 className="heading">{item.title}</h6>
               {item.components}
