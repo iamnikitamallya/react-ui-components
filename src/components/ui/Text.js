@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function Text({
+function Text({
   content,
   color,
   variant,
@@ -62,14 +62,14 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  color: 'body',
-  variant: 'para',
-  align: 'none',
-  transform: 'none',
-  style: 'normal',
-  weight: 'none',
-  decoration: 'none',
-  letterSpacing: '0',
   content: "I'm the Content",
-  className: ""
+  className: "",
+  color: "body",
+  align: "left",
+  transform: "initial",
+  style: "normal",
+  weight: "normal",
+  decoration: "none",
 }
+
+export default Text;

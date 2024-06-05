@@ -166,6 +166,10 @@ export default function Components() {
         </Card>
       ),
     },
+    {
+      title: "Text v.1",
+      components: <Text variant="h1" content="I'm the H1"/>
+    }
   ];
   return (
     <div className="container pt-4 pb-4 components">
