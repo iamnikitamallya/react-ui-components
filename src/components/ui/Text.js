@@ -52,7 +52,7 @@ Text.propTypes = {
     "left",
     "right",
     "justify",
-    "initial"
+    "initial",
   ]),
   transform: PropTypes.oneOf(["lowercase", "uppercase", "capitalize", "none"]),
   style: PropTypes.oneOf(["normal", "italic"]),

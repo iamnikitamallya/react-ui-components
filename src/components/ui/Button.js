@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function Button({
   variant = "primary",
   size = "small",
-  // onClick = () => {},
+  onClick = () => {},
   disabled = false,
   title = "I'm a Button",
   url = "/",
@@ -20,7 +20,7 @@ function Button({
           className={`btn btn-${variant} btn-${size} rounded-${bRadius} ${
             rtIcon ? "rtIcon" : ""
           } ${ltIcon ? "ltIcon" : ""}`}
-          // onClick={onClick}
+          onClick={onClick}
           disabled={disabled}
         >
           {ltIcon} {""}

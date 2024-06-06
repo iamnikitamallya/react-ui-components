@@ -12,11 +12,12 @@ export default function Card({
   children = "",
   title = "I'm the Card",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  className = "",
 }) {
   return (
     <>
       <div
-        className={`card p-4 text-${textAlign} d-${display} align-items-${align} gap-3`}
+        className={`card p-4 text-${textAlign} d-${display} align-items-${align} gap-3 ${className}`}
       >
         {imgUrl ? (
           <img
