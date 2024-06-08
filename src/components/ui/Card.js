@@ -17,7 +17,7 @@ export default function Card({
   return (
     <>
       <div
-        className={`card p-4 text-${textAlign} d-${display} align-items-${align} gap-3 ${className}`}
+        className={`card nm p-4 text-${textAlign} d-${display} align-items-${align} gap-3 ${className}`}
       >
         {imgUrl ? (
           <img
