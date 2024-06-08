@@ -6,7 +6,7 @@ This package is designed for beginners and intermediate developers, providing an
 
 To install the package, use the following command:
 
-```
+```javascript
 npm i @nikitamallya/react-ui-components
 ```
 
@@ -18,7 +18,7 @@ Ensure you have the following dependencies installed:
 
 To install the dependencies, use the following command:
 
-```
+```javascript
 npm i @babel/cli @babel/core @babel/preset-env @babel/preset-react babel-loader css-loader sass-loader style-loader webpack webpack-cli bootstrap prop-types react react-router-dom react-icons sass
 ```
 
@@ -46,7 +46,7 @@ _Note: All dependencies are added as devDependencies to prevent version conflict
 
 ### Card Component
 
-```
+```jsx
 <Card
   display="flex"
   imgUrl={card}
@@ -66,7 +66,7 @@ _Note: All dependencies are added as devDependencies to prevent version conflict
 
 ### Button Component
 
-```
+```jsx
 <Button
   title="Outline Danger"
   variant="outline-danger"
