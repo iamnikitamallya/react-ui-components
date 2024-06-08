@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Text({
   content = "I'm the Content",
-  color = "body",
+  color = "inherit",
   variant = "para",
   weight = "normal",
   decoration = "none",
@@ -12,6 +12,7 @@ function Text({
   align = "initial",
   transform = "none",
   className = "",
+  customColor,
 }) {
   return (
     <>
@@ -19,6 +20,7 @@ function Text({
         className={`text-${color} ${variant} text-${align} text-${transform} fst-${style} fw-${weight} text-decoration-${decoration} ${className}`}
         style={{
           letterSpacing: `${letterSpacing}px`,
+          color: `${customColor}`,
         }}
       >
         {content}
@@ -43,6 +45,7 @@ Text.propTypes = {
     "muted",
     "black-50",
     "white-50",
+    "inherit"
   ]),
   variant: PropTypes.oneOf(["h1", "h2", "h3", "h4", "h5", "h6", "para"]),
   align: PropTypes.oneOf([

@@ -14,12 +14,12 @@ npm i @nikitamallya/react-ui-components
 
 Ensure you have the following dependencies installed:
 
-@babel/cli @babel/core @babel/preset-env @babel/preset-react babel-loader css-loader sass-loader style-loader webpack webpack-cli bootstrap prop-types react react-router-dom react-icons sass
+react react-router-dom react-icons bootstrap 
 
 To install the dependencies, use the following command:
 
 ```javascript
-npm i @babel/cli @babel/core @babel/preset-env @babel/preset-react babel-loader css-loader sass-loader style-loader webpack webpack-cli bootstrap prop-types react react-router-dom react-icons sass
+npm i react react-router-dom react-icons bootstrap
 ```
 
 _Note: All dependencies are added as devDependencies to prevent version conflicts in live projects when users install this package._
@@ -32,47 +32,79 @@ _Note: All dependencies are added as devDependencies to prevent version conflict
 
 ## Usage
 
+Add the following import to your *index.js* to ensure the CSS works correctly, as the components rely on Bootstrap styles.
+
+```jsx
+import "bootstrap/dist/css/bootstrap.min.css";
+```
+
 ### Text Component
 
 ```jsx
-<Text
-  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue."
-  color="dark"
-  variant="h1"
-  weight="normal"
-  align="center"
-/>
+import React from "react";
+import { Text } from "@nikitamallya/react-ui-components";
+export default function App() {
+  return (
+    <>
+      <Text
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue."
+        color="dark"
+        variant="h1"
+        weight="normal"
+        align="center"
+      />
+    </>
+  );
+}
 ```
 
 ### Card Component
 
 ```jsx
-<Card
-  display="flex"
-  imgUrl={card}
-  objectFit="cover"
-  title="Lorem ipsum dolor sit"
-  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
->
-  <Text content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue." />
-  <Button
-    title="I'm Warning"
-    variant="warning"
-    size="lg"
-    ltIcon={<FaArrowLeft />}
-  />
-</Card>
+import React from "react";
+import { Text, Card, Button } from "@nikitamallya/react-ui-components";
+import demoImg from "../assets/img/demo.jpg";
+export default function App() {
+  return (
+    <>
+      <Card
+        display="flex"
+        imgUrl={demoImg}
+        objectFit="cover"
+        title="Lorem ipsum dolor sit"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue. Donec id vestibulum felis."
+      >
+        <Text content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu elit, sodales vel commodo eu, dignissim id augue." />
+        <Button
+          title="I'm Warning"
+          variant="warning"
+          size="lg"
+          ltIcon={<FaArrowLeft />}
+        />
+      </Card>
+    </>
+  );
+}
 ```
 
 ### Button Component
 
 ```jsx
-<Button
-  title="Outline Danger"
-  variant="outline-danger"
-  size="lg"
-  rtIcon={<FaArrowRight />}
-/>
+import React from "react";
+import { Button } from "@nikitamallya/react-ui-components";
+import { FaArrowRight } from "react-icons/fa";
+export default function App() {
+  return (
+    <>
+      <Button
+        title="Outline Danger"
+        variant="outline-danger"
+        size="lg"
+        rtIcon={<FaArrowRight />}
+      />
+    </>
+  );
+}
 ```
 
 _Note: This package is currently in Beta. I am actively working on enhancing the existing components and will provide detailed documentation once all necessary features are added. Thank you for your patience and support._
