@@ -33,6 +33,7 @@ export default function Components() {
             variant="primary"
             size="sm"
             rtIcon={<FaArrowRight />}
+            url="/"
           />
         </Card>
       ),

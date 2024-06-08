@@ -18,7 +18,7 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
+      
         <div className="App" onUpdate={() => window.scrollTo(0, 0)}>
           <ScrollToTop />
           <div>
@@ -29,7 +29,6 @@ function App() {
           </div>
           <Footer />
         </div>
-      </BrowserRouter>
     </>
   );
 }
