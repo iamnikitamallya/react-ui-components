@@ -61,7 +61,8 @@ p {
 }
 
 a {
-  color: #7365ff !important;
+  color: #7365ff;
+  text-decoration: none !important;
 }
 
 .text-right {

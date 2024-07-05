@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function Button({
+  className,
   variant = "primary",
   size = "small",
   onClick = () => {},
   disabled = false,
   title = "I'm a Button",
-  url = "/",
+  url,
   rtIcon,
   ltIcon,
   bRadius = "2",
@@ -19,7 +20,7 @@ function Button({
         <button
           className={`btn btn-${variant} btn-${size} rounded-${bRadius} ${
             rtIcon ? "rtIcon" : ""
-          } ${ltIcon ? "ltIcon" : ""}`}
+          } ${ltIcon ? "ltIcon" : ""} ${className ? "" : ""}`}
           onClick={onClick}
           disabled={disabled}
         >
