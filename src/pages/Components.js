@@ -166,7 +166,12 @@ export default function Components() {
       title: "Card v.5.2",
       components: (
         <Card icon={<FaCodepen />} display="flex" align="center">
-          <Button title="Outline Info" variant="outline-info" size="sm" />
+          <Button
+            title="Outline Info"
+            variant="outline-info"
+            size="sm"
+            className="p-20"
+          />
         </Card>
       ),
     },
