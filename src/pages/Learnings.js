@@ -10,10 +10,10 @@ export default function Learnings() {
           <Text variant="h4" content="Hello and welcome to React Learning!" />
           <Text
             variant="para"
-            content="This initiative aims to compile the most commonly used React UI components, beneficial for nearly all web projects developed with React. I have utilized Bootstrap CSS classes in some places and have written custom CSS as well."
+            content="This is the place where I will be practing react learnings that I'm doing from 9/12/2025."
           />
-          <Link className="App-link" to="/components">
-            Explore Components
+          <Link className="App-link" to="/brainstorm">
+            Get Started
           </Link>
         </div>
       </div>

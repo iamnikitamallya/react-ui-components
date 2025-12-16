@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Learnings from "./pages/Learnings";
 import Footer from "./components/common/Footer";
 import Components from "./pages/Components";
+import Brainstorm from "./components/Brainstorm";
 
 function App() {
   function ScrollToTop() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/learnings" element={<Learnings />} />
             <Route path="/components" element={<Components />} />
+            <Route path="/brainstorm" element={<Brainstorm />} />
           </Routes>
         </div>
         <Footer />
